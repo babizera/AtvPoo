@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Aluno a = new Aluno("Amanda Beatriz", "2026-SI", "Sistemas de Informação");
-        Professor p = new Professor("Daniel Gusmão", "ID-100", "POO");
+        // Criando os objetos
+        Pessoa p1 = new Aluno("Babi", "2026-SI", "Sistemas de Informação");
+        Pessoa p2 = new Professor("Daniel Gusmão", "ID-100", "POO");
 
-        System.out.println("=== DADOS DO ALUNO ===");
-        a.exibirDados();
+        System.out.println("=== TESTE DE POLIMORFISMO ===");
 
-        System.out.println("=== DADOS DO PROFESSOR ===");
-        p.exibirDados();
+        // O Java decide qual método rodar em "tempo de execução"
+        p1.apresentar();
+        p2.apresentar();
     }
 }

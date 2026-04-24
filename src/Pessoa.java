@@ -21,4 +21,8 @@ public class Pessoa {
         System.out.println("Nome:" + nome);
         System.out.println("Identificador:" + identificador);
     }
+
+    public void apresentar() {
+        System.out.println("Olá, eu sou uma pessoa.");
+    }
 }

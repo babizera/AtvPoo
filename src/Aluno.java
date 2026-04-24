@@ -16,9 +16,7 @@ public class Aluno extends Pessoa {
     }
 
     @Override
-    public void exibirDados() {
-        super.exibirDados();
-        System.out.println("Curso: " + this.curso);
-        System.out.println("-------------------------");
+    public void apresentar() {
+        System.out.println("Olá! Meu nome é " + getNome() + " e sou aluno do curso de " + getCurso() + ".");
     }
 }

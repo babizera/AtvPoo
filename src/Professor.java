@@ -7,9 +7,7 @@ public class Professor extends Pessoa {
     }
 
     @Override
-    public void exibirDados() {
-        super.exibirDados();
-        System.out.println("Disciplina: " + disciplina);
-        System.out.println("-------------------------");
+    public void apresentar() {
+        System.out.println("Olá! Sou o professor " + getNome() + " e leciono a disciplina de " + this.disciplina + ".");
     }
 }
