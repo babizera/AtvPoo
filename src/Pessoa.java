@@ -1,4 +1,4 @@
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private String identificador;
 
@@ -7,7 +7,7 @@ public class Pessoa {
         this.identificador = identificador;
     }
 
-    public String getNome() { return nome;}
+    public String getNome() { return nome; }
     public void setNome(String nome) {
         if (!nome.isEmpty()) this.nome = nome;
     }
@@ -18,8 +18,8 @@ public class Pessoa {
     }
 
     public void exibirDados() {
-        System.out.println("Nome:" + nome);
-        System.out.println("Identificador:" + identificador);
+        System.out.println("Nome: " + nome);
+        System.out.println("Identificador: " + identificador);
     }
 
     public void apresentar() {
